@@ -9,9 +9,12 @@
 
 <script lang="ts" setup>
 import { getOpacityColor } from '@/utils'
+import { useAppStore } from '@/store/modules/app'
+const { setPrimary, getPrimary } = useAppStore()
 
-const color = ref('#409EFF')
-const predefineColors = ref([
+const color = ref(getPrimary)
+const el = ref()
+const predefineColors = [
   '#ff4500',
   '#ff8c00',
   '#ffd700',
@@ -19,14 +22,33 @@ const predefineColors = ref([
   '#00ced1',
   '#1e90ff',
   '#c71585'
-])
+]
 
+onMounted(() => {
+  el.value = document.documentElement
+  el.value.style.setProperty(`--el-color-primary`, getPrimary)
+  for (let i = 1; i < 10; i++) {
+    el.value.style.setProperty(
+      `--el-color-primary-light-${i}`,
+      getOpacityColor(getPrimary, 1 - i / 10)
+    )
+    el.value.style.setProperty(
+      `--el-color-primary-dark-${i}`,
+      getOpacityColor(getPrimary, 1 - i / 10)
+    )
+  }
+})
+
+/**
+ * 切换主题
+ */
 const handleThemeChange = (color: string) => {
-  const el = document.documentElement
-  getComputedStyle(el).getPropertyValue(`--el-color-primary`)
-  el.style.setProperty(`--el-color-primary`, color)
-  for (let i = 3; i < 10; i++) {
-    el.style.setProperty(`--el-color-primary-light-${i}`, getOpacityColor(color, 1 - i / 10))
+  if (!color) return
+  setPrimary(color)
+  el.value.style.setProperty(`--el-color-primary`, color)
+  for (let i = 1; i < 10; i++) {
+    el.value.style.setProperty(`--el-color-primary-light-${i}`, getOpacityColor(color, 1 - i / 10))
+    el.value.style.setProperty(`--el-color-primary-dark-${i}`, getOpacityColor(color, 1 - i / 10))
   }
 }
 </script>

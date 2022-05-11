@@ -1,15 +1,26 @@
-import { darkMode } from '@/config/website'
-import type { DarkMode } from '@/config/website'
 import { defineStore } from 'pinia'
+import { useGlobalStorage } from '@/storage'
+
+const { primary, language } = useGlobalStorage()
 
 export const useAppStore = defineStore({
   id: 'App',
   state: () => ({
-    darkMode: undefined
+    primary: undefined,
+    language: undefined
   }),
   getters: {
-    getDarkMode(): DarkMode {
-      return this.darkMode || localStorage.getItem('vueuse-color-scheme') || darkMode
+    getPrimary(): string {
+      return primary.value
+    },
+    getLanguage(): string {
+      return language.value
+    }
+  },
+  actions: {
+    // 改变主题颜色
+    setPrimary(color: string): void {
+      primary.value = color
     }
   }
 })

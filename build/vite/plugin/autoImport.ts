@@ -15,7 +15,14 @@ export function configAutoImportPlugin(): Plugin | Plugin[] {
       imports: [
         'vue',
         {
-          '@vueuse/core': ['useDark', 'useToggle']
+          '@vueuse/core': [
+            'useDark',
+            'useToggle',
+            'createGlobalState',
+            'StorageSerializers',
+            'useStorage',
+            'useSessionStorage'
+          ]
         }
       ],
       resolvers: [ElementPlusResolver()],

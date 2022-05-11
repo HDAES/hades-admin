@@ -29,7 +29,6 @@ export function getOpacityColor(thisColor: string, thisOpacity: number) {
     let numbers = theColor.match(/(\d(\.\d+)?)+/g) as any[]
 
     numbers = numbers.slice(0, 3).concat(thisOpacity)
-    console.log(numbers)
     return 'rgba(' + numbers.join(',') + ')'
   }
 

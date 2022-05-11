@@ -6,9 +6,10 @@ import '@vue/runtime-core'
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     DarkModeToggle: typeof import('./../src/components/DarkModeToggle/src/DarkModeToggle.vue')['default']
-    ElButton: typeof import('element-plus/es')['ElButton']
-    ElColorPicker: typeof import('element-plus/es')['ElColorPicker']
+    RouterLink: typeof import('vue-router')['RouterLink']
+    RouterView: typeof import('vue-router')['RouterView']
     SvgIcon: typeof import('./../src/components/Icon/src/SvgIcon.vue')['default']
+    SwitchLanguage: typeof import('./../src/components/SwitchLanguage/src/SwitchLanguage.vue')['default']
     SwitchTheme: typeof import('./../src/components/SwitchTheme/src/SwitchTheme.vue')['default']
   }
 }

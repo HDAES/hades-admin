@@ -1,4 +1,9 @@
-export const darkMode: DarkMode = 'auto'
-export const primary = '#409EFF'
+// 模式选择
 
-export type DarkMode = 'light' | 'dark' | 'auto' | string
+export default {
+  darkMode: 'auto',
+
+  primary: '#409EFF',
+
+  language: 'zh_CN'
+}

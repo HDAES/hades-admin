@@ -1,16 +1,19 @@
-<template>
-  <el-button type="primary">Primary1</el-button>
-  <DarkModeToggle />
-  <SwitchTheme />
-</template>
+<script setup lang="ts">
+import zh_CN from 'element-plus/lib/locale/lang/zh-cn'
+import en from 'element-plus/lib/locale/lang/en'
+import { useGlobalStorage } from '@/storage'
+const Storage = useGlobalStorage()
 
-<style lang="scss" scoped>
-.c {
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: flex;
-  width: 100px;
-  color: #f0fff0;
-}
-</style>
+let locales = { zh_CN, en }
+</script>
+
+<template>
+  <el-config-provider
+    size="default"
+    :zIndex="3000"
+    :locale="locales[Storage.language.value]"
+    :button="{ autoInsertSpace: false }"
+  >
+    <router-view />
+  </el-config-provider>
+</template>
