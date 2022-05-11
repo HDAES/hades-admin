@@ -18,7 +18,7 @@ export function getOpacityColor(thisColor: string, thisOpacity: number) {
       theColor = sColorNew
     }
     //处理六位的颜色值
-    const sColorChange = []
+    const sColorChange: any[] = []
     for (let j = 1; j < 7; j += 2) {
       sColorChange.push(parseInt('0x' + theColor.slice(j, j + 2)))
     }
