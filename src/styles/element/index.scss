@@ -1,4 +1,5 @@
 $--colors: (
+  'primary': ('base': transparent),
   'success': ('base': #21ba45),
   'warning': ('base': #f2711c),
   'danger': ('base': #db2828),
@@ -8,4 +9,5 @@ $--colors: (
 
 @forward 'element-plus/theme-chalk/src/common/var.scss' with ($colors: $--colors,
   $button-padding-horizontal: ('default': 50px));
+
 @use 'element-plus/theme-chalk/src/dark/css-vars.scss' as *;

@@ -1,6 +1,6 @@
 module.exports = {
   // 最大长度80个字符
-  printWidth: 100,
+  printWidth: 120,
   // 行末分号
   semi: false,
   // 单引号

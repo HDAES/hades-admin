@@ -14,14 +14,3 @@
 import { useI18n } from '@/hooks/web/useI18n'
 const { t } = useI18n()
 </script>
-
-<style lang="scss" scoped>
-.c {
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: flex;
-  width: 100px;
-  color: #f0fff0;
-}
-</style>
