@@ -1,3 +1,4 @@
 #!/usr/bin/env sh
 . "$(dirname "$0")/_/husky.sh"
+echo "12313"
 npx lint-staged
