@@ -15,9 +15,11 @@
 <script setup lang="ts"></script>
 
 <style>
-a {  background-color: #f0f2f5;
-  width: 100%;
+a {
   font-weight: bold;
+  background-color: #f0f2f5;
+  width: 100%;
+
 
 }
 </style>
