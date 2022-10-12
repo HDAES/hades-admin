@@ -12,6 +12,8 @@
     <p>12312</p>
     <p>{{ $t('sys.hello') }}
 
+
+
     </p>
   </div>
 </template>
