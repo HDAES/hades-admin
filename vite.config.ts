@@ -6,7 +6,7 @@ import dayjs from 'dayjs'
 import { loadEnv } from 'vite'
 import path from 'path'
 
-import { wrapperEnv, getEnvConfig } from './build/utils'
+import { wrapperEnv } from './build/utils'
 import { createVitePlugins } from './build/vite/plugin'
 import { createProxy } from './build/vite/proxy'
 import { OUTPUT_DIR } from './build/constant'
