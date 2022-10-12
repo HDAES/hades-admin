@@ -5,7 +5,9 @@
     <SwitchTheme />
     <SvgIcon size="14"
              name="quanxian" />
-    <SwitchLanguage />
+    <SwitchLanguage
+
+    />
     <p>12312</p>
     <p>{{ $t('sys.hello') }}
     </p>
