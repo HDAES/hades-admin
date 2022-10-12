@@ -20,7 +20,7 @@ const __APP_INFO__ = {
 // https://vitejs.dev/config/
 export default ({ command, mode }: ConfigEnv): UserConfig => {
   const root = process.cwd()
-  // extract .env content by mode: development ?  production
+  // extract .env content by mode: development ? production
   const env = loadEnv(mode, root)
   // The boolean or number type read by loadEnv is a string. This function can be converted to boolean type or number type
   const viteEnv = wrapperEnv(env)
