@@ -4,7 +4,8 @@
     <DarkModeToggle />
     <SwitchTheme />
     <SvgIcon size="14"
-             name="quanxian" />
+             name="quanxian"
+    />
     <SwitchLanguage
     />
     <p>12312</p>
