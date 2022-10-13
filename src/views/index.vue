@@ -4,13 +4,11 @@
     <DarkModeToggle />
     <SwitchTheme />
     <SvgIcon size="14"
-             name="quanxian"
-    />
+             name="quanxian" />
     <SwitchLanguage
     />
-    <p>12312  </p>
-    <p>{{ $t('sys.hello') }}
-    </p>
+    <p>12312</p>
+    <p>{{ $t('sys.hello') }}</p>
   </div>
 </template>
 
