@@ -1,3 +1,4 @@
+import type { App, Plugin } from 'vue'
 /**
  * 十六进制color颜色/RGBA/RGB，改变透明度
  * @param {*} thisColor #555 rgba(85,85,85,0.6) rgb(85,85,85)
@@ -33,4 +34,15 @@ export function getOpacityColor(thisColor: string, thisOpacity: number) {
   }
 
   return theColor
+}
+
+export const withInstall = <T>(component: T, alias?: string) => {
+  const comp = component as any
+  comp.install = (app: App) => {
+    app.component(comp.name || comp.displayName, component)
+    if (alias) {
+      app.config.globalProperties[alias] = component
+    }
+  }
+  return component as T & Plugin
 }

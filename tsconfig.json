@@ -24,8 +24,10 @@
     "src/**/*.d.ts",
     "src/**/*.tsx",
     "src/**/*.vue",
+    "build/**/*.d.ts",
     "types/**/*.d.ts",
-  
+    "mock/**/*.ts"
   ],
+  "exclude": ["node_modules", "src/**/picture_cut/*.vue"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

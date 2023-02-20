@@ -1,17 +1,10 @@
 {
   "compilerOptions": {
     "composite": true,
-    "allowSyntheticDefaultImports": true ,
-    "resolveJsonModule": true,
-    "module": "esnext",
-    "moduleResolution": "node"
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true
   },
-  "include": [
-    "vite.config.ts",
-    "types/**/*.d.ts",
-    "build/**/*.d.ts",
-    "build/**/*.ts",
-    "mock/**/*.ts",
-    "package.json"
-  ]
+  "include": ["build/**/*.ts", "build/**/*.d.ts", "vite.config.ts","package.json"]
 }

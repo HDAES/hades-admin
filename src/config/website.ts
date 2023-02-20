@@ -5,5 +5,7 @@ export default {
 
   primary: '#409EFF',
 
-  language: 'zh_CN'
+  language: 'zh_CN',
+
+  resource: 'http://hades0512.oss-cn-beijing.aliyuncs.com'
 }

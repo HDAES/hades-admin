@@ -14,6 +14,7 @@ export function configAutoImportPlugin(): Plugin | Plugin[] {
     AutoImport({
       imports: [
         'vue',
+        'vue-router',
         {
           '@vueuse/core': [
             'useDark',

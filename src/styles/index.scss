@@ -1,0 +1,118 @@
+@import './var/index.scss';
+@import './transition.scss';
+@import './var/breakpoint.scss';
+
+.sidebar-scrollbar {
+  border-right: solid 1px var(--el-border-color);
+}
+
+.el-menu {
+  border-right: none !important;
+}
+
+.sidebar-el-menu:not(.el-menu--collapse) {
+  width: 200px;
+  min-height: 400px;
+}
+
+.el-menu--collapse .el-submenu__title span {
+  display: none;
+}
+
+/* 隐藏 */
+.el-menu--collapse .el-submenu__title .el-submenu__icon-arrow {
+  display: none;
+}
+
+//.sidebar-el-menu {
+//  .is-active {
+//    background-color: #0960bd !important;
+//  }
+//  .is-opened {
+//    .el-menu-item {
+//      background-color: #0c2135 !important;
+//    }
+//    .is-active {
+//      background-color: #0960bd !important;
+//    }
+//  }
+//  .el-menu-item:hover,
+//  .el-submenu__title:hover {
+//    color: #fff !important;
+//    i {
+//      color: #bbb !important;
+//    }
+//  }
+//}
+
+.card-header {
+  display: flex;
+  min-height: 36px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+// 全局card 样式
+.hades-card {
+  .el-card__header {
+    min-height: 36px;
+    padding: 0 12px;
+
+    .card-header {
+      .title {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.el-card.is-always-shadow {
+  box-shadow: none;
+}
+
+.lock-form {
+  .el-form-item__label {
+    padding: 0;
+  }
+}
+
+.el-scrollbar__view {
+  height: 100% !important;
+}
+
+.el-dialog {
+  .el-dialog__header {
+    display: flex;
+    padding-top: 15px;
+    border-bottom: 1px solid var(--el-border-color) !important;
+    align-items: center;
+    justify-content: space-between;
+
+    .el-dialog__headerbtn {
+      position: relative;
+      top: 0;
+      right: 0;
+    }
+  }
+
+  .el-dialog__footer {
+    padding-bottom: 10px;
+    border-top: 1px solid var(--el-border-color) !important;
+  }
+}
+
+.dialog-p-10 {
+  .el-dialog__body {
+    padding: 10px;
+  }
+}
+
+[display='none'] {
+  display: none;
+}
+
+.el-input__suffix-inner,
+.el-input__suffix {
+  display: flex;
+  align-items: center;
+}

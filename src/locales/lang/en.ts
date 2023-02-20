@@ -5,5 +5,6 @@ export default {
   message: {
     ...genMessage(modules, 'en')
   },
+  momentLocale: null,
   momentLocaleName: 'en'
 }

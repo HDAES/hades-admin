@@ -14,7 +14,7 @@
         "prettier --write",
         "stylelint --fix"
     ],
-    "*.{scss,less,styl,html}": [
+    "*.{vue,less,postcss,css,scss}": [
         "stylelint --fix",
         "prettier --write"
     ],

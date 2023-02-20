@@ -1,3 +1,4 @@
+import { unref } from 'vue'
 import { i18n } from './setupI18n'
 
 interface LangModule {
@@ -25,7 +26,7 @@ export function useLocale() {
     const langModule = ((await import(`./lang/${locale}.ts`)) as any).default as LangModule
     if (!langModule) return
 
-    const { message, momentLocale, momentLocaleName } = langModule
+    const { message } = langModule
 
     globalI18n.setLocaleMessage(locale, message)
 
