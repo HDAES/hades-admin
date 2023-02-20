@@ -4,7 +4,7 @@ specifiers:
   '@ant-design/icons-vue': ^6.0.1
   '@commitlint/cli': ^16.2.4
   '@commitlint/config-conventional': ^16.2.4
-  '@element-plus/icons-vue': ^0.2.6
+  '@element-plus/icons-vue': ^2.0.10
   '@heroicons/vue': ^1.0.5
   '@types/fs-extra': ^9.0.13
   '@types/graceful-fs': ^4.1.5
@@ -25,7 +25,7 @@ specifiers:
   cz-customizable: ^6.3.0
   dayjs: ^1.10.7
   dotenv: ^16.0.0
-  echarts: ^5.2.2
+  echarts: ^5.4.1
   echarts-liquidfill: ^3.1.0
   element-plus: ^2.2.32
   eslint: 8.13.0
@@ -71,7 +71,7 @@ specifiers:
   vite-plugin-vue-setup-extend: ^0.4.0
   vite-plugin-windicss: ^1.8.4
   vue: ^3.2.6
-  vue-echarts: ^6.0.0
+  vue-echarts: ^6.5.4
   vue-i18n: ^9.2.0-beta.25
   vue-router: ^4.0.12
   vue-tsc: ^0.34.7
@@ -82,7 +82,7 @@ specifiers:
 
 dependencies:
   '@ant-design/icons-vue': 6.1.0_vue@3.2.33
-  '@element-plus/icons-vue': 0.2.7_vue@3.2.33
+  '@element-plus/icons-vue': 2.0.10_vue@3.2.33
   '@heroicons/vue': 1.0.6_vue@3.2.33
   '@vueuse/core': 7.7.1_vue@3.2.33
   axios: 0.21.4
@@ -775,14 +775,6 @@ packages:
   /@ctrl/tinycolor/3.4.1:
     resolution: {integrity: sha512-ej5oVy6lykXsvieQtqZxCOaLT+xD4+QNarq78cIYISHmZXshCvROLudpQN3lfL8G0NL7plMSSK+zlyvCaIJ4Iw==}
     engines: {node: '>=10'}
-    dev: false
-
-  /@element-plus/icons-vue/0.2.7_vue@3.2.33:
-    resolution: {integrity: sha512-S8kDbfVaWkQvbUYQE1ui448tzaHfUvyESCep9J6uPRlViyQPXjdIfwLBhV6AmQSOfFS8rL+xehJGhvzPXLrSBg==}
-    peerDependencies:
-      vue: ^3.2.0
-    dependencies:
-      vue: 3.2.33
     dev: false
 
   /@element-plus/icons-vue/2.0.10_vue@3.2.33:

@@ -14,7 +14,13 @@ import {
   GoogleCircleFilled,
   TwitterCircleFilled,
   DashboardOutlined,
-  CodepenOutlined
+  CodepenOutlined,
+  AreaChartOutlined,
+  BarChartOutlined,
+  PieChartFilled,
+  SlidersOutlined,
+  LineChartOutlined,
+  DotChartOutlined
 } from '@ant-design/icons-vue'
 
 export const antComps = [
@@ -30,7 +36,13 @@ export const antComps = [
   GoogleCircleFilled,
   TwitterCircleFilled,
   DashboardOutlined,
-  CodepenOutlined
+  CodepenOutlined,
+  AreaChartOutlined,
+  BarChartOutlined,
+  PieChartFilled,
+  SlidersOutlined,
+  LineChartOutlined,
+  DotChartOutlined
 ]
 import {
   ChatLineRound,
@@ -40,10 +52,21 @@ import {
   Platform,
   KnifeFork,
   DocumentCopy,
-  Monitor
+  Monitor,
+  SwitchFilled
 } from '@element-plus/icons-vue'
 
-export const elementComps = [ChatLineRound, Setting, Dessert, Coin, Platform, KnifeFork, DocumentCopy, Monitor]
+export const elementComps = [
+  ChatLineRound,
+  Setting,
+  Dessert,
+  Coin,
+  Platform,
+  KnifeFork,
+  DocumentCopy,
+  Monitor,
+  SwitchFilled
+]
 
 export function registerGlobComp(app: App) {
   const nameList: string[] = []

@@ -49,12 +49,15 @@
         </el-col>
         <el-col :span="12">
           <el-form-item :label="formData.type == 2 ? '请求地址：' : '路由地址：'" prop="path">
-            <el-input v-model="formData.path" :placeholder="formData.type == 2 ? '接口请求地址' : '请输入路由地址'" />
+            <el-input
+              v-model="formData.path"
+              :placeholder="formData.type == 2 ? '接口请求地址' : '请输入路由地址(**)'"
+            />
           </el-form-item>
         </el-col>
         <el-col :span="12" v-if="formData.type == 1">
           <el-form-item label="组件地址：">
-            <el-input v-model="formData.component" placeholder="请输入组件地址" />
+            <el-input v-model="formData.component" placeholder="请输入组件地址(**/**)" />
           </el-form-item>
         </el-col>
         <el-col :span="24">

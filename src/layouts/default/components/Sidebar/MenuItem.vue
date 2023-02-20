@@ -18,9 +18,10 @@
     v-else
   >
     <Icon :name="route?.meta.icon" size="18" />
-    <template #title>
-      {{ route?.meta.title }}
-    </template>
+
+    <slot name="title">
+      <span class="pl-1">{{ route?.meta.title }}</span>
+    </slot>
   </el-menu-item>
 </template>
 

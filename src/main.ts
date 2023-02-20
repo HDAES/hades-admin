@@ -1,9 +1,6 @@
-import { createApp } from 'vue'
-
 import 'virtual:windi.css'
 import 'virtual:svg-icons-register'
 
-import '@/styles/index.scss'
 import 'echarts-liquidfill'
 
 import { setupRouter } from '@/router'
