@@ -7,6 +7,7 @@ import { use } from 'echarts/core'
 import { CanvasRenderer } from 'echarts/renderers'
 import { PieChart } from 'echarts/charts'
 import VChart from 'vue-echarts'
+import type { EChartsOption } from 'echarts'
 import { GridComponent, LegendComponent, TitleComponent, TooltipComponent } from 'echarts/components'
 use([CanvasRenderer, PieChart, GridComponent, TitleComponent, TooltipComponent, LegendComponent])
 
@@ -20,7 +21,7 @@ piePatternImg.src = piePatternSrc
 const bgPatternImg = new Image()
 bgPatternImg.src = bgPatternSrc
 
-const option = {
+const option: EChartsOption = {
   backgroundColor: {
     image: bgPatternImg,
     repeat: 'repeat'

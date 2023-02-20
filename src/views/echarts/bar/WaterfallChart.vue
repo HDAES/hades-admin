@@ -40,7 +40,7 @@ const option = {
   xAxis: {
     type: 'category',
     data: (function () {
-      let list = []
+      let list: string[] = []
       for (let i = 1; i <= 11; i++) {
         list.push('Nov ' + i)
       }
