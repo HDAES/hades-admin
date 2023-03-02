@@ -7,5 +7,5 @@ export default {
 
   language: 'zh_CN',
 
-  resource: 'http://hades0512.oss-cn-beijing.aliyuncs.com'
+  resource: '/assets'
 }

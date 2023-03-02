@@ -57,24 +57,24 @@ const sky = new THREE.Mesh(skyGeometry, skyMaterial)
 sky.geometry.scale(1, 1, -1)
 scene.add(sky)
 //创建视频纹理
-const video = document.createElement('video')
-video.src = website.resource + '/three/small-Island/sky.mp4'
-video.loop = true
-video.crossOrigin = '*'
-window.addEventListener('click', () => {
-  if (video.paused) {
-    video.play()
-    skyMaterial.map = new THREE.VideoTexture(video)
-    skyMaterial.map.needsUpdate = true
-  }
-})
+// const video = document.createElement('video')
+// video.src = website.resource + '/three/small-Island/sky.mp4'
+// video.loop = true
+// video.crossOrigin = '*'
+// window.addEventListener('click', () => {
+//   if (video.paused) {
+//     video.play()
+//     skyMaterial.map = new THREE.VideoTexture(video)
+//     skyMaterial.map.needsUpdate = true
+//   }
+// })
 //载入环境纹理
-const hdrLoader = new RGBELoader()
-hdrLoader.loadAsync(website.resource + '/three/small-Island/050.hdr').then(texture => {
-  texture.mapping = THREE.EquirectangularReflectionMapping
-  scene.background = texture
-  scene.environment = texture
-})
+// const hdrLoader = new RGBELoader()
+// hdrLoader.loadAsync(website.resource + '/three/small-Island/050.hdr').then(texture => {
+//   texture.mapping = THREE.EquirectangularReflectionMapping
+//   scene.background = texture
+//   scene.environment = texture
+// })
 //添加灯光
 const light = new THREE.DirectionalLight(0xffffff, 1)
 light.position.set(-100, 100, 10)
